@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.picttp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".studentinfo"></activity>
+        <activity android:name=".users_single_layout" />
+        <activity android:name=".page_3_3_admin" />
+        <activity android:name=".page_3_2_admin" />
+        <activity android:name=".page_3_1_admin"
+            android:parentActivityName=".page_3_admin"/>
+        <activity android:name=".page_3_admin" />
+        <activity android:name=".SIGNUP_FORM_ADMIN" />
+        <activity android:name=".LOGIN_FORM_ADMIN" />
+        <activity android:name=".page_3_3" />
+        <activity android:name=".page_3_2" />
+        <activity android:name=".page_3_1" />
+        <activity android:name=".page_3" />
+        <activity android:name=".SIGNUP_FORM" />
+        <activity android:name=".LOGIN_FORM" />
+        <activity android:name=".first">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

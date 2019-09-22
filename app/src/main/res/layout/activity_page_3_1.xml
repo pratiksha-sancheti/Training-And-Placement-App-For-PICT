@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page_3_1"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/m10"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="10th MARKSHEET" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/m12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12th MARKSHEET" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/aadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AADHAR" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/passport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSPORT" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/engg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGG MARKSHEET" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESUME" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
