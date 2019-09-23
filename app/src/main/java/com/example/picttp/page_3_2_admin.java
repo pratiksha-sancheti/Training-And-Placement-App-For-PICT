@@ -74,11 +74,20 @@ public class page_3_2_admin extends AppCompatActivity {
     }
     private void sendcompanydata()
     {
-        String name = Name_Comp;
+        Log.d("case123", "onClick: Inside");
+
+//        String name = Name_Comp;
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = firebaseDatabase.getReference("Company");
-        comapnyinfo cmpinfo =  new comapnyinfo(Name_Comp,Ctc,Type,Role,Url);
-        myRef.child("Company").setValue(cmpinfo);
+        Log.d("case123", "onClick: Inside1");
+        DatabaseReference myRef = firebaseDatabase.getReference();
+        Log.d("case123", "onClick: Inside2");
+        String name1=myRef.push().getKey();
+        Log.d("case123", name1);
+        companydata cmpinfo =  new companydata(Name_Comp,Ctc,Type,Role,Url);
+        Log.d("case123", "onClick: Inside4");
+        myRef.child("company").child(name1).setValue(cmpinfo);
+        Log.d("case1234", "onClick: Done");
+
 
     }
 

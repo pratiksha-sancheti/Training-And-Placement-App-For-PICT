@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".studentinfo"></activity>
+        <activity android:name=".companyinfo"></activity>
+        <activity android:name=".comapny_single_layout" />
+        <activity android:name=".studentinfo" />
         <activity android:name=".users_single_layout" />
         <activity android:name=".page_3_3_admin" />
         <activity android:name=".page_3_2_admin" />
-        <activity android:name=".page_3_1_admin"
-            android:parentActivityName=".page_3_admin"/>
+        <activity
+            android:name=".page_3_1_admin"
+            android:parentActivityName=".page_3_admin" />
         <activity android:name=".page_3_admin" />
         <activity android:name=".SIGNUP_FORM_ADMIN" />
         <activity android:name=".LOGIN_FORM_ADMIN" />

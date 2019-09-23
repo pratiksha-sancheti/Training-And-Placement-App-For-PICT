@@ -21,7 +21,7 @@ public class page_3 extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),page_3_1.class));
     }
     public void btn_Comp_info(View view) {
-        startActivity(new Intent(getApplicationContext(),page_3_2.class));
+        startActivity(new Intent(getApplicationContext(),page_3_3_admin.class));
     }
     public void btn_mock_test(View view) {
         startActivity(new Intent(getApplicationContext(),page_3_3.class));
