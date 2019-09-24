@@ -18,7 +18,7 @@ public class page_3 extends AppCompatActivity {
     }
 
     public void btn_docu(View view) {
-        startActivity(new Intent(getApplicationContext(),page_3_1.class));
+        startActivity(new Intent(getApplicationContext(),aadhar.class));
     }
     public void btn_Comp_info(View view) {
         startActivity(new Intent(getApplicationContext(),page_3_3_admin.class));

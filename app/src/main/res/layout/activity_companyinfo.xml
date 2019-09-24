@@ -77,6 +77,8 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="TextView"
+        android:autoLink="web"
+        android:linksClickable="true"
         android:textSize="20sp" />
 
 

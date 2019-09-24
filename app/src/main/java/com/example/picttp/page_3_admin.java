@@ -24,7 +24,8 @@ public class page_3_admin extends AppCompatActivity {
     }
     public void btn_logout(View view) {
 
-        startActivity(new Intent(this,LOGIN_FORM_ADMIN.class));
+        startActivity(new Intent(this,first.class));
+        finish();
     }
 
 
