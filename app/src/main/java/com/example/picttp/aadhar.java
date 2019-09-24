@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -37,12 +38,14 @@ public class aadhar extends AppCompatActivity {
     FirebaseDatabase database;
     Uri pdfUri;
     ProgressDialog progressDialog;
+    private FirebaseAuth firebaseauth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aadhar);
 
+        firebaseauth = FirebaseAuth.getInstance();
         storage=FirebaseStorage.getInstance();
         database=FirebaseDatabase.getInstance();
 
@@ -89,7 +92,7 @@ public class aadhar extends AppCompatActivity {
         final String filename=System.currentTimeMillis()+"";
         StorageReference storageReference=storage.getReference();
 
-        storageReference.child("Uploads").child(filename).putFile(pdfUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        storageReference.child(firebaseauth.getUid()).child(filename).putFile(pdfUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
